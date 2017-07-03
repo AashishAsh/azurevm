@@ -8,12 +8,7 @@ param(
         [Parameter(Mandatory=$true)]        
         [string]$StorageAccountName,
         [Parameter(Mandatory=$true)]        
-        [string]$VMName,
-        [Parameter(Mandatory=$true)]        
-        [string]$Username,
-        [Parameter(Mandatory=$true)]        
-        [string]$Password
-     
+        [string]$VMName  
 
       )
       $Credentials=Get-Credential -username '$Username' -password '$Password'
