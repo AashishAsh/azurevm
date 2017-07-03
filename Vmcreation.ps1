@@ -11,9 +11,8 @@ param(
         [string]$VMName  
 
       )
-      $Credentials=Get-Credential -username '$Username' -password '$Password'
-
-    Login-AzureRmAccount -Credential $Credentials
+ 
+    Login-AzureRmAccount
 
 
 [array]$AzureLocations=Get-AzureRmLocation | sort Location | Select Location
